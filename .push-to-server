@@ -1,0 +1,5 @@
+# These are shell variables for push-to-server
+
+# Hostname to push to
+TARGET=fsdb.wtbl.company
+NAME=bridge-github

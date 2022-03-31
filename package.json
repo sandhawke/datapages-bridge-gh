@@ -1,0 +1,32 @@
+{
+  "type": "module",
+  "name": "datapages-bridge-gh",
+  "version": "0.0.0",
+  "description": "Bridge between datapages and github",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx standard && NODE_OPTIONS=--experimental-vm-modules npx jest --coverage",
+    "jest": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "jest": {
+    "transform": {}
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandhawke/datapages-bridge-gh.git"
+  },
+  "keywords": [
+    "sandhawke"
+  ],
+  "author": "Sandro Hawke (http://hawke.org/sandro)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sandhawke/datapages-bridge-gh/issues"
+  },
+  "homepage": "https://github.com/sandhawke/datapages-bridge-gh#readme",
+  "dependencies": {
+    "debug": "^4.3.1",
+    "delay": "^5.0.0",
+    "git-pull-or-clone": "^2.0.1"
+  }
+}
