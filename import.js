@@ -1,6 +1,7 @@
 import gitCOP from './git-clone-or-pull.js'
 import Debug from 'debug'
 import delay from 'delay'
+import {importFiles} from 'datapages-import'
 
 const debug = Debug('datapages-bridge-github/import')
 
@@ -70,7 +71,7 @@ export async function gitImport({pac, name, url, after}) {
 
     debug('importing files from %o to %o', dir, mountPoint)
     console.log('importing files from %o to %o', dir, mountPoint)
-    await pac.importFiles(mountPoint, dir)
+    await importFiles(pac, mountPoint, dir)
     debug('import done')
   }
 }
